@@ -52,8 +52,8 @@ WHERE
 */
 WITH A AS (
   SELECT
-    employee_id,
-    COUNT(trip_id) AS trip_cnt
+    employee_id
+    ,COUNT(trip_id) AS trip_cnt
   FROM
     TRIP
   GROUP BY
